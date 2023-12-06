@@ -1,0 +1,21 @@
+{
+  "name": "multiecdsa-validator-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "enable": "ts-node enableOwner.ts",
+    "disable": "ts-node disableOwner.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "permissionless": "^0.0.13",
+    "viem": "^1.19.11"
+  }
+}
