@@ -49,7 +49,7 @@ export const OLD_OWNER_ADDRESS: Address = OLD_OWNER_ACCOUNT.address;
 
 export const setupClients = async () => {
   const eoaWalletClient: WalletClient = createWalletClient({
-    account: privateKeyToAccount(OLD_OWNER_PK),
+    account: OLD_OWNER_ACCOUNT,
     chain: goerli,
     transport: http(RPC),
   });
